@@ -260,6 +260,7 @@ background:black;
 display:grid;
 grid-template-columns:300px 1fr;
 gap:40px;
+align-items: center;
 }
 
 
@@ -325,6 +326,7 @@ padding:20px;
 border-radius:10px;
 box-shadow:0 0 15px rgba(0,229,255,0.2);
 transition:.3s;
+margin-bottom:10px;
 }
 
 .graphBox:hover{
@@ -344,6 +346,11 @@ text-shadow:0 0 6px #00e5ff;
 margin-bottom:15px;
 }
 
+.graphsPanel{
+display:flex;
+flex-direction:column;
+gap:5px;
+}
 
 footer{
 text-align:center;
