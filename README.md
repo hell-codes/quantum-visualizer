@@ -8,6 +8,9 @@ Features:
 - Applications of quantum mechanics
 
 Technologies:
--HTML, CSS, JavaScript
+
+- HTML
+- CSS
+- JavaScript
 
 B.Tech CSE – Amrita Vishwa Vidyapeetham, Chennai
