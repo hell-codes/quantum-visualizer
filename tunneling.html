@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quantum Tunneling</title>
+
+<link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">Quantum Visualizer</a>
+
+<ul class="navlinks">
+<li><a href="wavefunction.html">Wavefunction</a></li>
+<li><a href="tunneling.html">Tunneling</a></li>
+<li><a href="application.html">Applications</a></li>
+</ul>
+
+</nav>
+
+<section class="concept">
+
+<h1>Quantum Tunneling Simulation</h1>
+
+<p>
+Quantum tunneling is a phenomenon where a particle can pass through
+a potential barrier even when its energy is lower than the barrier height.
+In classical physics this would be impossible, but in quantum mechanics
+particles behave like waves and part of the wave can penetrate the barrier.
+</p>
+
+</section>
+
+<section class="formula">
+
+<h2>Tunneling Concept</h2>
+
+<div class="formulaBox">
+
+Transmission Probability  
+T ≈ e<sup>−2κa</sup>
+
+</div>
+
+<p>
+
+κ = √(2m(V − E)) / ħ  
+V = Barrier Height  
+E = Particle Energy  
+a = Barrier Width  
+
+</p>
+
+</section>
+
+<section class="container">
+
+<div class="controls">
+
+<h3>Simulation Controls</h3>
+
+<label>Particle Energy</label>
+
+<input type="range" id="energySlider" min="1" max="200" value="20">
+
+<p id="energyValue">Energy = 20</p>
+
+<p>
+Higher energy increases tunneling probability.
+</p>
+
+</div>
+
+<div class="simulation">
+<canvas id="tunnelCanvas"></canvas>
+</div>
+
+</section>
+
+<section class="explanation">
+
+<h2>Concept Explanation</h2>
+
+<p>
+When a quantum particle encounters a potential barrier,
+its wavefunction does not abruptly stop.
+Instead, the wave decays exponentially inside the barrier.
+</p>
+
+<p>
+If the barrier is thin enough, the wave can emerge on the
+other side, meaning the particle has tunneled through.
+</p>
+
+</section>
+
+<footer>
+<p>
+Quantum Visualizer <br> 
+Quantum Mechanics Simulation Project<br>
+B.Tech CSE – Amrita Vishwa Vidyapeetham, Chennai | 2026
+</p>
+</footer>
+
+<script src="js/tunneling.js"></script>
+<script src="js/background.js"></script>
+
+</body>
+</html>

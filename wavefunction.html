@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wavefunction Simulator</title>
+
+<link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">Quantum Visualizer</a>
+
+<ul class="navlinks">
+<li><a href="wavefunction.html">Wavefunction</a></li>
+<li><a href="tunneling.html">Tunneling</a></li>
+<li><a href="application.html">Applications</a></li>
+</ul>
+
+</nav>
+
+<section class="concept">
+
+<h1>Particle in a Box – Wavefunction Visualization</h1>
+
+<p>
+In quantum mechanics, particles behave like waves.
+The Schrödinger equation describes the evolution of this wavefunction.
+</p>
+
+</section>
+
+<section class="formula">
+
+<h2>Schrödinger Equation</h2>
+
+<div class="formulaBox">
+iħ ∂ψ/∂t = −(ħ² / 2m) ∇²ψ + Vψ
+</div>
+
+</section>
+
+<section class="simulationSection">
+
+<h2 class="simTitle">Quantum Wavefunction Simulation</h2>
+
+<div class="simulatorLayout">
+
+<div class="controlsPanel">
+
+<h3>Simulation Controls</h3>
+
+<label>Quantum Number (n)</label>
+
+<input type="range" id="nSlider" min="1" max="30" value="1">
+
+<p id="nValue">n = 1</p>
+
+<p class="controlText">
+Increasing the quantum number increases the number of standing wave peaks.
+</p>
+
+</div>
+
+<div class="graphsPanel">
+
+<div class="graphBox">
+<h3>Wavefunction ψ(x)</h3>
+<canvas id="waveCanvas"></canvas>
+</div>
+
+<div class="graphBox">
+<h3>Probability Density |ψ(x)|²</h3>
+<canvas id="probCanvas"></canvas>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="explanation">
+
+<h2>Concept Explanation</h2>
+
+<p>
+A particle trapped between two rigid walls forms standing waves.
+Only certain wavelengths are allowed, leading to discrete energy levels.
+</p>
+
+<div class="formulaBox">
+ψₙ(x) = √(2/L) sin(nπx/L)
+</div>
+
+<p>The probability of finding the particle is:</p>
+
+<div class="formulaBox">
+|ψ(x)|²
+</div>
+
+</section>
+
+<footer>
+<p>
+Quantum Visualizer <br> 
+Quantum Mechanics Simulation Project<br>
+B.Tech CSE – Amrita Vishwa Vidyapeetham, Chennai | 2026
+</p>
+</footer>
+
+<script src="js/wavefunction.js"></script>
+<script src="js/background.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quantum Visualizer</title>
+
+<link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">Quantum Visualizer</a>
+
+<ul class="navlinks">
+<li><a href="wavefunction.html">Wavefunction</a></li>
+<li><a href="tunneling.html">Tunneling</a></li>
+<li><a href="application.html">Applications</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="heroText">
+
+<h1>Interactive Visualization of Quantum Mechanics</h1>
+
+<p>
+This project demonstrates key concepts of quantum mechanics such as
+wavefunctions, quantized energy levels, and quantum tunneling
+through interactive simulations based on the Schrödinger equation.
+</p>
+
+<div class="buttons">
+
+<a href="wavefunction.html" class="btn">Wavefunction Simulator</a>
+<a href="tunneling.html" class="btn">Tunneling Demo</a>
+
+</div>
+
+</div>
+
+<div class="heroCanvas">
+<canvas id="atomCanvas"></canvas>
+</div>
+
+</section>
+
+<section class="conceptSection">
+
+<h2>The Schrödinger Equation</h2>
+
+<div class="formula">
+iħ ∂ψ/∂t = −(ħ² / 2m) ∇²ψ + Vψ
+</div>
+
+<p>
+The Schrödinger equation describes how quantum particles behave as waves.
+The wavefunction ψ(x,t) contains the probability distribution of a particle.
+</p>
+
+</section>
+
+<section class="features">
+
+<h2>Project Simulations</h2>
+
+<div class="featureGrid">
+
+<div class="card">
+<h3>Wavefunction Simulator</h3>
+<p>
+Visualizes the particle-in-a-box model.  
+Changing the quantum number alters the standing wave pattern.
+</p>
+<a href="wavefunction.html">Explore →</a>
+</div>
+
+<div class="card">
+<h3>Quantum Tunneling</h3>
+<p>
+Shows how particles can pass through potential barriers
+even when classical physics says it should be impossible.
+</p>
+<a href="tunneling.html">Explore →</a>
+</div>
+
+<div class="card">
+<h3>Applications</h3>
+<p>
+Explore how quantum mechanics powers technologies such as
+semiconductors, STM microscopes, and quantum computing.
+</p>
+<a href="application.html">Explore →</a>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>
+Quantum Visualizer <br> 
+Quantum Mechanics Simulation Project<br>
+B.Tech CSE – Amrita Vishwa Vidyapeetham, Chennai | 2026
+</p>
+</footer>
+
+<script src="js/atom.js"></script>
+<script src="js/background.js"></script>
+
+</body>
+</html>
